@@ -1,5 +1,4 @@
-# E-COMMERCE-FOLLOW-ALONG
-[10:26 am, 25/1/2025] Tejas JU: # eCommerce-follow-along
+# eCommerce-follow-along
 ### Project Overview: E-Commerce Application (MERN Stack)
 
 This project will guide you through building a full-stack e-commerce web application using the MERN stack (MongoDB, Express.js, React.js, Node.js). You will learn how to implement key functionalities such as user authentication, **product management, and **order handling while gaining hands-on experience with REST APIs, database schema design, and frontend development with React.
@@ -7,27 +6,27 @@ This project will guide you through building a full-stack e-commerce web applica
 ---
 
 ### Key Features:
-- *User Authentication:* Secure login and registration with JWT.
-- *Product Management:* CRUD operations for products, with features like filtering and sorting.
-- *Order Handling:* Users can place and view orders.
-- *REST API:* Build scalable API endpoints for managing users, products, and orders.
-- *Frontend:* Responsive UI built with React for a smooth user experience.
+- User Authentication: Secure login and registration with JWT.
+- Product Management: CRUD operations for products, with features like filtering and sorting.
+- Order Handling: Users can place and view orders.
+- REST API: Build scalable API endpoints for managing users, products, and orders.
+- Frontend: Responsive UI built with React for a smooth user experience.
 
 ---
 
 ### Core Concepts:
-- *MERN Stack*: Using MongoDB, Express.js, React.js, and Node.js for full-stack development.
-- *REST APIs*: Design and develop API endpoints for user and product management.
-- *Authentication*: Implement secure login and session management.
-- *Database Schema*: Design MongoDB schemas for users, products, and orders.
+- MERN Stack: Using MongoDB, Express.js, React.js, and Node.js for full-stack development.
+- REST APIs: Design and develop API endpoints for user and product management.
+- Authentication: Implement secure login and session management.
+- Database Schema: Design MongoDB schemas for users, products, and orders.
 
 ---
 
 ### Next Steps:
-1. Set up the *development environment* and install dependencies.
-2. Implement a *basic server* using Node.js and Express.
-3. Start building the *React frontend* and connect it to the backend.
-4. Design *MongoDB schemas* for structured data storage.
+1. Set up the development environment and install dependencies.
+2. Implement a basic server using Node.js and Express.
+3. Start building the React frontend and connect it to the backend.
+4. Design MongoDB schemas for structured data storage.
 
 This project will help you master the full-stack development process, from database to frontend, with a focus on scalability and user interaction.
 
@@ -59,7 +58,7 @@ Configured Multer to handle file uploads in the application. This allows users t
 
 
 ---
- ## MILESTONE .5 :-
+## MILESTONE5 :-
 1. Created a Sign-Up Page in React.
 2. Implemented form validation for:
       Name (required)
@@ -68,3 +67,61 @@ Configured Multer to handle file uploads in the application. This allows users t
       Password Confirmation (must match password)
 
 4. Used React Router for navigation.
+
+## MILESTONE 6;
+New Feature Added:
+
+--> Login Page:
+A user-friendly login page has been added, featuring:
+
+Email and password validation.
+
+A "Show/Hide Password" toggle for enhanced user experience.
+
+Error handling for invalid email format and password length.
+
+Loading state to indicate the process of authentication.
+
+Navigation to a signup page for new users.
+
+--> Signup Functionality:
+
+Passwords are securely hashed using bcrypt during signup to enhance security.
+
+The hashed password is stored in the database instead of plain text.
+
+Complete user data, including name, email, and other necessary information, is securely stored in the database.
+
+--> File Upload Functionality:
+
+Users can upload files securely via the application.
+
+Uploaded files are validated for type and size restrictions to ensure security and compliance.
+
+Files are stored in the server’s designated directory or cloud storage service.
+
+Proper error handling ensures seamless user experience during upload failures.
+
+Technologies Used:
+
+React (Frontend)
+
+Tailwind CSS (Styling)
+
+React Router (Routing)
+
+Express.js (Backend)
+
+Stripe/PayPal (Payment Gateway)
+
+bcrypt (Password Hashing)
+
+Installation & Setup:
+
+Clone the repository.
+
+Run npm install to install dependencies.
+
+Start the development server with npm start.
+
+Ensure you have the necessary backend setup for user authentication, file upload handling, and database integration to manage hashed passwords, user data, and uploaded files securely.
