@@ -125,3 +125,14 @@ Run npm install to install dependencies.
 Start the development server with npm start.
 
 Ensure you have the necessary backend setup for user authentication, file upload handling, and database integration to manage hashed passwords, user data, and uploaded files securely.
+
+
+## Milestone 7: Create Login Endpoint
+Task Completed ✅
+Implemented a login API endpoint.
+Accepted user credentials (email/username and password).
+Retrieved the corresponding user from the database.
+Validated the password using bcrypt.
+Compared the entered password with the stored hashed password for authentication.
+Generated a JWT token upon successful login for authentication.
+Implemented error handling for invalid credentials and server errors.
