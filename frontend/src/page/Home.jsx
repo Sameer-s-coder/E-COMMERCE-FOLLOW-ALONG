@@ -9,7 +9,7 @@ export default function Home() {
 
   useEffect(() => {
     setProducts(productData);
-  }, []);
+  }, []); 
 
   return (
     <>
