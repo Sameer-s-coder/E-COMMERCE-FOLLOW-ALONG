@@ -66,7 +66,11 @@ router.post(
         product: newProduct,
       });
     } catch (err) {
+
       console.error(err);
+
+      console.error(' Server error:', err);
+
       res
         .status(500)
         .json({ error: "Server error. Could not create product." });
@@ -113,6 +117,7 @@ router.get('/my-products', async (req, res) => {
   }
 }
 );
+
 
 router.get('/product/:id', async (req, res) => {
   const { id } = req.params;

@@ -3,19 +3,28 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import {LoginPage,SignupPage,Home,CreateProduct, MyProducts} from "./Routes";
 import "./App.css";
 
+
 function App(){
   return(
+
+const App = () => {
+  return (
+
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/login' element={<LoginPage/>}/>
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/create-product" element={<CreateProduct />} />
+
         <Route path="/create-product/:id" element={<CreateProduct />} />
         <Route path="/my-products" element={<MyProducts />} />
+
+        <Route path="/myproducts" element={<MyProducts />} />
+
       </Routes>
     </BrowserRouter>
   )
 }
 
-export default App;
+export default App
