@@ -1,19 +1,18 @@
-import { BrowserRouter,Routes,Route } from "react-router-dom";
-import { LoginPage,SignupPage,Home,CreateProduct } from "./Routes.jsx"
-
-import './App.css';
+ 
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import {LoginPage,SignupPage,Home,CreateProduct, MyProducts} from "./Routes";
+import "./App.css";
 
 function App(){
   return(
     <BrowserRouter>
       <Routes>
-        <Route path="/Login" element={<LoginPage/>}/>
-        <Route path="/signup" element={<SignupPage/>}/>
-        <Route path="/Home" element={<Home/>}/>
-        <Route path="/create-product" element={<CreateProduct/>}/>
-      
-
-
+        <Route path='/' element={<Home/>}/>
+        <Route path='/login' element={<LoginPage/>}/>
+        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/create-product" element={<CreateProduct />} />
+        <Route path="/create-product/:id" element={<CreateProduct />} />
+        <Route path="/my-products" element={<MyProducts />} />
       </Routes>
     </BrowserRouter>
   )
