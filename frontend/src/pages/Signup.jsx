@@ -7,4 +7,8 @@ function SignupPage(){
         </div>
     )
 }
+
+export default SignupPage;
+
 export default SignupPage;
+
