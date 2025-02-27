@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
-import Myproduct from "../components/auth/myProduct";
+import Myproduct from "../components/auth/myproduct";
 import NavBar from "../components/auth/nav";
 
 export default function MyProducts() {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
-    const email = "Sameer@gmail.com"
+    const email = "sameer123@gmail.com"
 
     useEffect(() => {
-        fetch(`http://localhost:8000/api/v2/product/my-products?email=${email}`)
+        fetch(`http://localhost:5000/api/v2/product/my-products?email=${email}`)
             .then((res) => {
                 if (!res.ok) {
                     throw new Error(`HTTP error! status: ${res.status}`);

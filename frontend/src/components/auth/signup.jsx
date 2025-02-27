@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import {useState} from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import styles from "../../styles/styles";
 import { Link } from "react-router-dom";
@@ -37,7 +37,7 @@ const Signup = () => {
     };
 
     axios
-      .post("http://localhost:8000/api/v2/user/create-user", newForm, config)
+      .post("http://localhost:5000/api/v2/user/create-user", newForm, config)
       .then((res) => {
         console.log(res.data);
       })
